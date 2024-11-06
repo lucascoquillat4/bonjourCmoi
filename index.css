@@ -75,10 +75,87 @@ h2 {
   z-index: 20;
 }
 
-.popup:before,
-#popup2:before,
-#popupitec:before,
-#popupac:before,
+#popup2:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: -2;
+}
+
+#popup2:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFF;
+  z-index: -1;
+  border-radius: 29px;
+  height: auto;
+}
+
+#popupitec:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: -2;
+}
+
+#popupitec:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFF;
+  z-index: -1;
+  border-radius: 29px;
+  height: auto;
+}
+#popupac:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: -2;
+}
+
+#popupac:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFF;
+  z-index: -1;
+  border-radius: 29px;
+  height: auto;
+}
+#popupee:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: -2;
+}
+
 #popupee:before {
   position: absolute;
   content: "";
@@ -89,20 +166,7 @@ h2 {
   background: #FFF;
   z-index: -1;
   border-radius: 29px;
-}
-
-#popup2:after,
-#popupitec:after,
-#popupac:after,
-#popupee:after {
-  position: fixed;
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -2;
+  height: auto;
 }
 
 b,
@@ -127,8 +191,12 @@ b:active {
   color: #001aa1;
 }
 
+p {
+    margin: 1em;
+}
+
 p+p+p {
-  font-size: 60%;
+    font-size: 60%;
 }
 
 .couleur {
@@ -141,15 +209,16 @@ img {
   padding-right: 5px;
 }
 
-.Refer {
+.Retour {
   text-align: center;
   padding-right: 20px;
 }
 
-aside {
-  position: absolute;
-  top: 0px;
-  right: 0px;
+aside
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 
 a {
